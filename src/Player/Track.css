@@ -1,0 +1,83 @@
+.songRow {
+  margin-left: 20px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+  color: white;
+}
+
+.songRow:hover {
+  cursor: pointer;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.songRow__info {
+  margin-left: 20px;
+}
+
+.songRow__info > h1 {
+  font-size: 16px;
+}
+
+.songRow__info > p {
+  font-size: 14px;
+  margin-top: 3px;
+  color: gray;
+}
+
+.songRow__album {
+  height: 40px;
+  width: 40px;
+}
+
+.PlayerRSWP * {
+  box-sizing: border-box;
+}
+
+.__181lube {
+  height: 4px;
+}
+
+._SliderRSWP {
+  color: white;
+  background-color: black !important;
+}
+
+.__77inad p a {
+  color: #d4dce1 !important;
+}
+
+svg {
+  color: rgb(255, 255, 255);
+  /* box-shadow: rgb(204 204 204) 1px 1px 10px; */
+}
+.PlayerRSWP {
+  background-color: #282828 !important;
+  color: white;
+}
+.__1d63smy > div {
+  background-color: #282828 !important;
+  box-shadow: none;
+}
+
+._ContentRSWP {
+  color: #ffffff;
+  background-color: #282828;
+}
+._InfoRSWP {
+  color: #ffffff;
+  background-color: #282828;
+}
+.rswp__devices__active {
+  color: #ffffff !important;
+  background-color: #282828 !important;
+}
+.__1k6b4a3 > div {
+  background-color: #282828 !important;
+  box-shadow: none;
+}
+.rrs__range {
+  background-color: chartreuse !important;
+}
