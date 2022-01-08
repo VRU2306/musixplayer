@@ -157,4 +157,5 @@
   white-space: pre;
   color: #ffffff;
   margin-left: 350px;
+  overflow-y: scroll;
 }

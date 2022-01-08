@@ -6,6 +6,7 @@ import { useState, useEffect } from "react"
 import { useStateValue } from "../StateProvider";
 import Player from "../Player/Player";
 import SearchIcon from '@mui/icons-material/Search';
+// this package provides all the tracks,albums,artists,songs
 import SpotifyWebApi from "spotify-web-api-node"
 import axios from "axios"
 import { Avatar } from "@mui/material";
@@ -101,17 +102,20 @@ function Dashboard({ }) {
       </div>
     </div>
     <div>
-          {searchResults.map(track => (
+      {!search&&!lyrics?<div className="text-center">Hello,Welcome to the Custom Music Player,<br></br>Search a music and Click on it ,<br></br>Music starts Playing</div>:
+         <div>  
+           {searchResults.map(track => (
           <TrackSearchResult
             track={track}
             key={track.uri}
             chooseTrack={chooseTrack}
           />
-        ))}
+        ))}</div>}
+        
         {searchResults.length === 0 && (
           <div>
             {lyrics==="No Lyrics Found"?(<div className="text-center" style={{}}>
-          
+          No Lyrics Found,<br></br> Head to the App and request Lyrics.
           </div>): 
           <div className="text-center" >
          {lyrics}
