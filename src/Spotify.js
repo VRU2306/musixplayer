@@ -1,7 +1,10 @@
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "f710544782484e3e98bfa8e8a44103df";
-const redirectUri = "https://musicclone.herokuapp.com//";
+const redirectUri = "https://musicclone.herokuapp.com/";
 const scopes = [
+  "streaming",
+  "user-read-email", 
+  "user-read-private",
   "user-read-currently-playing",
   "user-read-recently-played",
   "user-read-playback-state",

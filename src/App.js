@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import './App.css';
 import Login from "./Login/Login"
 import SpotifyWebApi from "spotify-web-api-node";
-import Dashboard from "./Dashboard/Dashboard";
+
 import { useStateValue } from "./StateProvider";
 import HomePage from "./Homepage"
 import { getTokenFromResponse } from "./Spotify";
@@ -11,7 +11,7 @@ import { getTokenFromResponse } from "./Spotify";
 function App() {
 
  const [ {token} , dispatch] = useStateValue();
-
+  // console.log(token)
  useEffect(() => {
     // Set token
     const hash = getTokenFromResponse();

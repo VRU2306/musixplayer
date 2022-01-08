@@ -7,8 +7,8 @@ import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import { useStateValue } from "../StateProvider";
 
 function Sidebar() {
-  const [{playlists} , dispatch] = useStateValue();
-  console.log(playlists);
+  const [{playlists,token} , dispatch] = useStateValue();
+  // console.log(playlists,token);
 
   return (
     <div className="sidebar">
