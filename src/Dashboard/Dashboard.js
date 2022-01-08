@@ -8,7 +8,7 @@ import Player from "../Player/Player";
 import SearchIcon from '@mui/icons-material/Search';
 // this package provides all the tracks,albums,artists,songs
 import SpotifyWebApi from "spotify-web-api-node"
-import axios from "axios"
+import axios from "../axios"
 import { Avatar } from "@mui/material";
 import TrackSearchResult from "../Player/Track"
 const spotifyApi = new SpotifyWebApi({
@@ -34,7 +34,7 @@ function Dashboard({ }) {
     if (!playingTrack) return
 
     axios
-      .get("http://localhost:5223/lyrics", {
+      .get("/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
