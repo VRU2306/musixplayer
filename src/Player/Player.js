@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+// sets the player bar from spotify
 import SpotifyPlayer from "react-spotify-web-playback"
 
 export default function Player({ token, trackUri }) {
